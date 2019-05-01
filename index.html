@@ -4,34 +4,73 @@
     <meta charset="UTF-8">
     <title>Dash</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="top-header">
         <nav class="header-menu">
-            <div class="logo">
-                S.
-            </div>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#">Refferal</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Help</a></li>
+            <div class="logo">S.</div>
+            <ul class="header-menu__navigation">
+                <li class="header-menu__navigation-button"> 
+                    <a class="header-menu__navigation-button-text header-menu__navigation-button-text_active" href="index.html">Home</a>
+                </li>
+                <li class="header-menu__navigation-button">
+                    <a class="header-menu__navigation-button-text" href="#">Refferal</a>
+                </li>
+                <li class="header-menu__navigation-button">
+                    <a class="header-menu__navigation-button-text" href="#">Profile</a>
+                </li>
+                <li class="header-menu__navigation-button">
+                    <a class="header-menu__navigation-button-text" href="#">Help</a>
+                </li>
             </ul>
         </nav>
         <div class="user-controls">
             <div class="user-controls__notification">
                 <a href="#">
-                    <i class="fas fa-bell"><span>10</span></i>
+                    <i class="fas fa-bell user-controls__notification-image">
+                        <span class="user-controls__notification-amount">10</span>
+                    </i>
                 </a>
             </div>
             <div class="user-controls__info">
-                <div class="user-controls__avatar">
-                    <img src="img/nazarov.jpg" alt="avatar">
+                <div class="user-controls__avatar-container">
+                    <div class="user-controls__avatar">
+                        <img class="user-controls__avatar-image" src="img/nazarov.jpg" alt="avatar">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <main class="main-container">
+        <aside class="side-bar">
+            <div class="side-bar__account-info-container">
+                <div class="side-bar__account-info">
+                    <span class="side-bar__account-info-text">followers</span>
+                    <span class="side-bar__account-info-amount side-bar__account-info-amount_upper">83k</span>
+                </div>
+                <div class="side-bar__account-info">
+                    <span class="side-bar__account-info-text">posts</span>
+                    <span class="side-bar__account-info-amount">2k</span>
+                </div>
+                <div class="side-bar__account-info">
+                    <span class="side-bar__account-info-text">following</span>
+                    <span class="side-bar__account-info-amount">1.3k</span>
+                </div>
+            </div>
+            <a class="side-bar__main-menu-button side-bar__start-activity-button" href="#">
+                <i class="fas fa-play"></i>
+                <span class="side-bar__start-activity-button-text">Start Activity</span>
+            </a>
+            <a class="side-bar__main-menu-button side-bar__pay-button" href="#">
+                <span class="side-bar__pay-button-usual-price">$12/mo</span>
+                <span class="side-bar__pay-button-special-offer">$6/mo</span>
+                <br>
+                <span class="side-bar__pay-button-time">If you upgrade in 00:50:31</span>
+            </a>
+        </aside>
+    </main>
 </body>
 </html>
