@@ -23,6 +23,15 @@ a{
 .header-menu{
     display: flex;
 }
+.avatar{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar-border{
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+}
 .header-menu__navigation{
     display: flex;
     list-style: none;
@@ -79,11 +88,16 @@ a{
 .user-controls__avatar{
     height: 46px;
     width: 46px;
-    border-radius: 50%;
-    overflow: hidden;
 }
 .user-controls__avatar-image{
     width: 100%;
+}
+.user-controls__avatar-container{
+    padding-left: 40px;
+}
+.user-controls__avatar-border{
+    border-color: #b6c4d4;
+    padding: 1px;
 }
 .user-controls__notification-image{
     font-size: 32px;
@@ -98,22 +112,7 @@ a{
     top: -4px;
     background-color: #f57171;
     padding: 3px 6px;
-    border-radius: 5px
-}
-.user-controls__avatar-container{
-    position: relative;
-    margin-left: 40px;
-}
-.user-controls__avatar-container:before{
-    content: '';
-    position: absolute;
-    background-image: url('../img/avatar-circle.svg');
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-    background-size: contain;
-    top: -2px;
-    left: -2px;
+    border-radius: 5px;
 }
 .main-container{
     padding-left: 66px;
@@ -123,28 +122,25 @@ a{
 }
 .side-bar{
     background-color: white;
-    padding: 50px 35px;
-    flex-basis: auto;
+    padding: 25px 20px;
+    flex-basis: 340px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .side-bar__main-menu-button{
     border-radius: 5px;
     color: white;
-}
-.side-bar__start-activity-button{
+    padding: 15px 0;
+    margin-top: 16px;
     font-size: 15px;
     background-color: #192229;
-    padding: 18px 74px 18px 61px;
 }
 .side-bar__start-activity-button-text{
     padding-left: 12px;
 }
 .side-bar__pay-button{
-    margin-top: 16px;
     background-color: #0986ff;
-    text-align: center;
-    padding: 15px 0;
 }
 .side-bar__pay-button-usual-price{
     text-decoration: line-through;
@@ -158,8 +154,9 @@ a{
 }
 .side-bar__account-info-container{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
+    justify-content: space-around;
+    padding-bottom: 14px;
+    margin-top: 15px;
 }
 .side-bar__account-info{
     font-size: 24px;
@@ -179,27 +176,77 @@ a{
     font-weight: 500;
     text-align: center;
 }
-.side-bar__account-info-amount{
-    font-size: 16px;
-    color: #0885fe;
-    display: table-cell;
-    vertical-align: middle;
+.side-bar__account-info-amount_upper{
+    display: flex;
+    align-items: center;
 }
-.side-bar__account-info-amount-upper:before{
-    content: '<i class="fas fa-arrow-up"></i>';
+.side-bar__account-info-amount_arrow{
+    color: #0986ff;
+    font-size: 16px;
+    display: block;
+}
+.side-bar__account-control-container{
+    display: flex;
+    justify-content: space-between;
+}
+.side-bar__account-control-avatar-border{
+    border-color: #ff947b;
+    padding: 3px;
+    position: relative;
+}
+.side-bar__account-control-avatar{
+    height: 67px;
+    width: 67px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdddd6;
+}
+.side-bar__account-control-avatar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    justify-content: space-around;
+}
+.side-bar__account-control-trial-button{
+    border-style: solid;
+    color: #192229;
+    border-width: 1px;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 9px 11px;
+    font-weight: bold;
+    display: block;
+}
+.side-bar__account-control-username{
+    font-size: 15px;
+}
+.side-bar__account-control-icon{
+    font-size: 26px;
+    color: #435769;
+}
+.side-bar__account-control{
+    padding-top: 7px;
+}
+.side-bar__account-control-avatar-bolt{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: #2ec2a0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    right: -10px;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*
-color="#f2f6fa"
-color="#b4c2d3"
-color="#192229"
-color="#fbfcfd"
-color="#0986ff"
-color="#0885fe"
-
-
-
-
-
+color="#2ec2a0"
+77
+25
+170
 
 
 

@@ -28,17 +28,15 @@
             </ul>
         </nav>
         <div class="user-controls">
-            <div class="user-controls__notification">
-                <a href="#">
-                    <i class="fas fa-bell user-controls__notification-image">
-                        <span class="user-controls__notification-amount">10</span>
-                    </i>
-                </a>
-            </div>
+            <a href="#" class="fas fa-bell user-controls__notification-image">
+                <span class="user-controls__notification-amount">10</span>
+            </a>
             <div class="user-controls__info">
                 <div class="user-controls__avatar-container">
-                    <div class="user-controls__avatar">
-                        <img class="user-controls__avatar-image" src="img/nazarov.jpg" alt="avatar">
+                    <div class="user-controls__avatar-border avatar-border">
+                        <div class="user-controls__avatar avatar">
+                            <img class="user-controls__avatar-image" src="img/nazarov.jpg" alt="avatar">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,30 +44,53 @@
     </header>
     <main class="main-container">
         <aside class="side-bar">
-            <div class="side-bar__account-info-container">
-                <div class="side-bar__account-info">
-                    <span class="side-bar__account-info-text">followers</span>
-                    <span class="side-bar__account-info-amount side-bar__account-info-amount_upper">83k</span>
+                <div class="side-bar__account-control-container">
+                    <div class="side-bar__account-control">
+                        <i class="fas fa-chevron-circle-left side-bar__account-control-icon"></i>
+                    </div>
+                    <div class="side-bar__account-control-avatar-container">
+                        <div class="side-bar__account-control-avatar-border avatar-border">
+                            <div class="side-bar__account-control-avatar avatar">
+                                <img class="user-controls__avatar-image" src="img/nazarov.jpg" alt="avatar">
+                            </div>
+                            <a class="side-bar__account-control-avatar-bolt" href="#">
+                                <div class="fas fa-bolt"></div>
+                            </a>
+                        </div>
+                        <div class="side-bar__account-control-username">emily.hunter</div>
+                        <a class="side-bar__account-control-trial-button" href="#">TRIAL</a>
+                    </div>
+                    <div class="side-bar__account-control">
+                        <i class="fas fa-cog side-bar__account-control-icon"></i>
+                    </div>
                 </div>
-                <div class="side-bar__account-info">
-                    <span class="side-bar__account-info-text">posts</span>
-                    <span class="side-bar__account-info-amount">2k</span>
+                <div class="side-bar__account-info-container">
+                    <div class="side-bar__account-info">
+                        <span class="side-bar__account-info-text">followers</span>
+                        <span class="side-bar__account-info-amount side-bar__account-info-amount_upper">
+                            <i class="fas fa-arrow-up side-bar__account-info-amount_arrow"></i>
+                            83k
+                        </span>
+                    </div>
+                    <div class="side-bar__account-info">
+                        <span class="side-bar__account-info-text">posts</span>
+                        <span class="side-bar__account-info-amount">2k</span>
+                    </div>
+                    <div class="side-bar__account-info">
+                        <span class="side-bar__account-info-text">following</span>
+                        <span class="side-bar__account-info-amount">1.3k</span>
+                    </div>
                 </div>
-                <div class="side-bar__account-info">
-                    <span class="side-bar__account-info-text">following</span>
-                    <span class="side-bar__account-info-amount">1.3k</span>
-                </div>
-            </div>
-            <a class="side-bar__main-menu-button side-bar__start-activity-button" href="#">
-                <i class="fas fa-play"></i>
-                <span class="side-bar__start-activity-button-text">Start Activity</span>
-            </a>
-            <a class="side-bar__main-menu-button side-bar__pay-button" href="#">
-                <span class="side-bar__pay-button-usual-price">$12/mo</span>
-                <span class="side-bar__pay-button-special-offer">$6/mo</span>
-                <br>
-                <span class="side-bar__pay-button-time">If you upgrade in 00:50:31</span>
-            </a>
+                <a class="side-bar__main-menu-button" href="#">
+                    <i class="fas fa-play"></i>
+                    <span class="side-bar__start-activity-button-text">Start Activity</span>
+                </a>
+                <a class="side-bar__main-menu-button side-bar__pay-button" href="#">
+                    <span class="side-bar__pay-button-usual-price">$12/mo</span>
+                    <span class="side-bar__pay-button-special-offer">$6/mo</span>
+                    <br>
+                    <span class="side-bar__pay-button-time">If you upgrade in 00:50:31</span>
+                </a>
         </aside>
     </main>
 </body>
